@@ -48,7 +48,7 @@ export class UserEntity extends CommonEntity {
 ```
 코드를 통해서 설명하자면 아래 User Entity는 Address Entity를 참조하는 것을 알 수 있다. ManyToMany에서는 `@JoinTable`을 이용하여 두 테이블 간의 중간 테이블을 만들어서 데이터를 저장하는 것이 좋다. 테이블 구조는 아래 이미지와 같다.
 
-![[Pasted image 20240624201700.png]]
+![[CRUD응용 mtm ERD.png]]
 address와 users 테이블 간 사이에 중간 테이블을 두어 각각의 PK를 참조하게 하였다. 아래는 Address Entity의 코드이다.
 
 ``` ts
